@@ -92,7 +92,22 @@ void Curve::sortControlPoints()
 		flag = true;
 	}*/
 	//=========================================================================
+	float time_tmp = 0.0f;
 	std::sort(controlPoints.begin(), controlPoints.end(), comp_time);
+	//cannot change the xml file so need to erase the points that have the same time.
+	for (auto it = controlPoints.begin(); it != controlPoints.end();) {
+		if (it == controlPoints.begin()) {
+			time_tmp = it->time;
+			it++;
+			continue;
+		}
+		if (it->time == time_tmp)
+			controlPoints.erase(it);
+		else {
+			time_tmp = it->time;
+			it++;
+		}
+	}
 	return;
 }
 
