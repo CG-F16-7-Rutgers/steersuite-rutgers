@@ -30,3 +30,6 @@
 # Documentation
 documentation/CodeReference
 documentation/doxygen-warnings.log
+*.dat
+*.log
+*.gz

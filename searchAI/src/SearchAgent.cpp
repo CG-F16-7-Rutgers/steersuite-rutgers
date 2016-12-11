@@ -85,6 +85,7 @@ void SearchAgent::reset(const SteerLib::AgentInitialConditions & initialConditio
 	assert(_forward.length()!=0.0f);
 	assert(_goalQueue.size() != 0);
 	assert(_radius != 0.0f);
+	computePlan();
 }
 
 
@@ -123,6 +124,7 @@ void SearchAgent::computePlan()
 
 void SearchAgent::updateAI(float timeStamp, float dt, unsigned int frameNumber)
 {
+	std::cout<<"UPdate AI .."<<std::endl;
 	Util::AutomaticFunctionProfiler profileThisFunction( &SearchAIGlobals::gPhaseProfilers->aiProfiler );
 
 	

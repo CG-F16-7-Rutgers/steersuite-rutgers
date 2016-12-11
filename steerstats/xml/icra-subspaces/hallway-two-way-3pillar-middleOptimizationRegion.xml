@@ -9,7 +9,7 @@ compensate for this just name the discretization 0.
 
 For this we need to somehow include the constraint that we don't want the pillars
 to intersect. -->
-	 <ai_config name="hallway-two-way-2pillar" >
+	 <!--<ai_config name="hallway-two-way-2pillar" >
 		<parameter type="float" name="p1_x">
 			<min type="float">-3</min>
 			<max type="float">4</max>
@@ -44,6 +44,44 @@ to intersect. -->
 			<min type="float">-3.5</min>
 			<max type="float">3.5</max>
 			<original type="float">-1</original>
+			<discretization type="float">20</discretization>
+		</parameter>
+	</ai_config>-->
+	<ai_config name="hallway-two-way-2pillar" >
+		<parameter type="float" name="p1_x">
+			<min type="float">-3</min>
+			<max type="float">4</max>
+			<original type="float">1.58375992</original>
+			<discretization type="float">20</discretization>
+		</parameter>
+		<parameter type="float" name="p1_z">
+			<min type="float">-3.5</min>
+			<max type="float">3.5</max>
+			<original type="float">-0.58346131</original>
+			<discretization type="float">20</discretization>
+		</parameter>
+		<parameter type="float" name="p2_x">
+			<min type="float">-3</min>
+			<max type="float">4</max>
+			<original type="float">0.12739515</original>
+			<discretization type="float">20</discretization>
+		</parameter>
+		<parameter type="float" name="p2_z">
+			<min type="float">-3.5</min>
+			<max type="float">3.5</max>
+			<original type="float">-0.02086934</original>
+			<discretization type="float">20</discretization>
+		</parameter>
+		<parameter type="float" name="p3_x">
+			<min type="float">-3</min>
+			<max type="float">4</max>
+			<original type="float">0.81204613</original>
+			<discretization type="float">20</discretization>
+		</parameter>
+		<parameter type="float" name="p3_z">
+			<min type="float">-3.5</min>
+			<max type="float">3.5</max>
+			<original type="float">-0.62687049</original>
 			<discretization type="float">20</discretization>
 		</parameter>
 	</ai_config>

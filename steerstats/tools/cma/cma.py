@@ -3746,8 +3746,8 @@ class CMADataLogger(BaseDataLogger):  # might become a dict at some point
             f.close()
         except (IOError, OSError):
             print('could not open file ' + fn)
-        finally:
-            f.close()
+        #finally:
+        #    f.close()
         fn = self.name_prefix + 'stddev.dat'
         try: 
             f = open(fn, 'w')
@@ -3758,8 +3758,8 @@ class CMADataLogger(BaseDataLogger):  # might become a dict at some point
             f.close()
         except (IOError, OSError):
             print('could not open file ' + fn)
-        finally:
-            f.close()
+        #finally:
+        #    f.close()
 
         fn = self.name_prefix + 'xmean.dat'
         try: 
